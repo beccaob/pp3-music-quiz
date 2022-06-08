@@ -8,7 +8,7 @@ def play_quiz():
 # Q1
     while True:
         print("Which symbol was the title of Ed Sheerans first album?")
-        ans1 = input("A. +\nB. =\nC. %\n").strip()
+        ans1 = input("A. +\nB. =\nC. %\nj").strip()
         if ans1.upper() == "A":
             print("Correct!\n")
             score += 1
@@ -27,7 +27,7 @@ def play_quiz():
             print("Correct!\n")
             score += 1
             break
-        elif ans1.upper() == "A" or ans1.upper() == "C":
+        elif ans2.upper() == "A" or ans2.upper() == "C":
             print("Oops! That's incorrect.\n")
             break
         else:
@@ -41,7 +41,7 @@ def play_quiz():
             print("Correct!\n")
             score += 1
             break
-        elif ans1.upper() == "B" or ans1.upper() == "C":
+        elif ans3.upper() == "B" or ans3.upper() == "C":
             print("Oops! That's incorrect.\n")
             break
         else:
@@ -55,7 +55,7 @@ def play_quiz():
             print("Correct!\n")
             score += 1
             break
-        elif ans1.upper() == "B" or ans1.upper() == "A":
+        elif ans4.upper() == "B" or ans4.upper() == "A":
             print("Oops! That's incorrect.\n")
             break
         else:
@@ -69,7 +69,7 @@ def play_quiz():
             print("Correct!\n")
             score += 1
             break
-        elif ans1.upper() == "C" or ans1.upper() == "A":
+        elif ans5.upper() == "C" or ans5.upper() == "A":
             print("Oops! That's incorrect.\n")
             break
         else:
@@ -83,7 +83,63 @@ def play_quiz():
             print("Correct!\n")
             score += 1
             break
-        elif ans1.upper() == "C" or ans1.upper() == "A":
+        elif ans6.upper() == "C" or ans6.upper() == "A":
+            print("Oops! That's incorrect.\n")
+            break
+        else:
+            print("Invalid answer! Please choose between A, B or C\n")
+
+# Q7
+    while True:
+        print("Which prison did Johnny Cash famously sing about in his 1955 song?")
+        ans7 = input("A. Folsom\nB. Alcatraz\nC. Ohio State\n").strip()
+        if ans7.upper() == "A":
+            print("Correct!\n")
+            score += 1
+            break
+        elif ans7.upper() == "C" or ans7.upper() == "B":
+            print("Oops! That's incorrect.\n")
+            break
+        else:
+            print("Invalid answer! Please choose between A, B or C\n")
+
+# Q8
+    while True:
+        print("What was the name of the band formed by Jack Bruce, Eric Clapton, and Ginger Baker?")
+        ans8 = input("A. Cream\nB. Doobie Brothers\nC. ACDC\n").strip()
+        if ans8.upper() == "A":
+            print("Correct!\n")
+            score += 1
+            break
+        elif ans8.upper() == "C" or ans8.upper() == "B":
+            print("Oops! That's incorrect.\n")
+            break
+        else:
+            print("Invalid answer! Please choose between A, B or C\n")
+
+# Q9
+    while True:
+        print("Who originally recorded the classic ballad I Will Always Love You in 1973?")
+        ans9 = input("A. David Bowie\nB. Dolly Parton\nC. Whitney Houston\n").strip()
+        if ans9.upper() == "B":
+            print("Correct!\n")
+            score += 1
+            break
+        elif ans9.upper() == "C" or ans9.upper() == "A":
+            print("Oops! That's incorrect.\n")
+            break
+        else:
+            print("Invalid answer! Please choose between A, B or C\n")
+
+# Q10
+    while True:
+        print("Which band had a huge international hit album in 2002 with the record "A Rush of Blood to the Head"?")
+        ans10 = input("A. Bowling For Soup\nB. My Chemical Romance\nC. Coldplay\n").strip()
+        if ans10.upper() == "C":
+            print("Correct!\n")
+            score += 1
+            break
+        elif ans10.upper() == "B" or ans10.upper() == "A":
             print("Oops! That's incorrect.\n")
             break
         else:

@@ -56,7 +56,7 @@ def enter_player_name():
     """
     while True:
         print("Next choose a username!\n")
-        print("Letters A-Z 01and numbers 0-9 are allowed.")
+        print("Letters A-Z and numbers 0-9 are allowed.")
         print("Maximum of 8 characters.")
         print("Any white space will be removed.\n")
 
