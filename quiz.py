@@ -83,7 +83,8 @@ def play_quiz():
 # Q6
     while True:
         print("Which Bob Dylan song did Adele include on her first album?")
-        ans6 = input("A. Hurricane\nB. Make You Feel My Love\nC. Lay, Lady, Lay\n").strip()
+        ans6 = input(
+            "A.Hurricane\nB.Make You Feel My Love\nC.Lay,Lady,Lay\n").strip()
         if ans6.upper() == "B":
             print("Correct!\n")
             score += 1
@@ -97,7 +98,8 @@ def play_quiz():
 
 # Q7
     while True:
-        print("Which prison did Johnny Cash famously sing about in his 1955 song?")
+        print
+        ("Which prison did Johnny Cash famously sing about in his 1955 song?")
         ans7 = input("A. Folsom\nB. Alcatraz\nC. Ohio State\n").strip()
         if ans7.upper() == "A":
             print("Correct!\n")
@@ -112,7 +114,8 @@ def play_quiz():
 
 # Q8
     while True:
-        print("What was the name of the band formed by Jack Bruce & Eric Clapton?")
+        print
+        ("What was the name of the band formed by Jack Bruce & Eric Clapton?")
         ans8 = input("A. Cream\nB. Doobie Brothers\nC. ACDC\n").strip()
         if ans8.upper() == "A":
             print("Correct!\n")
@@ -127,8 +130,10 @@ def play_quiz():
 
 # Q9
     while True:
-        print("Who originally recorded the classic ballad I Will Always Love You in 1973?")
-        ans9 = input("A. David Bowie\nB. Dolly Parton\nC. Whitney Houston\n").strip()
+        print
+        ("Who originally recorded I Will Always Love You in 1973?")
+        ans9 = input(
+            "A. David Bowie\nB. Dolly Parton\nC. Whitney Houston\n").strip()
         if ans9.upper() == "B":
             print("Correct!\n")
             score += 1
@@ -142,8 +147,10 @@ def play_quiz():
 
 # Q10
     while True:
-        print("Which band had a huge international hit album in 2002 with the record 'A Rush of Blood to the Head'?")
-        ans10 = input("A. Bowling For Soup\nB. My Chemical Romance\nC. Coldplay\n").strip()
+        print
+        ("Which band had a hit album'A Rush of Blood to the Head'?")
+        ans10 = input(
+            "A.Bowling For Soup\nB.My Chemical Romance\nC.Coldplay\n").strip()
         if ans10.upper() == "C":
             print("Correct!\n")
             score += 1
@@ -170,3 +177,4 @@ def play_quiz():
     else:
         print("Unreal, well done!\n")
         return score
+        
