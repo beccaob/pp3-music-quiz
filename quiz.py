@@ -17,7 +17,7 @@ while True:
     elif ans1.upper() == "B" or ans1.upper() == "C":
         print("Oops! That's incorrect.\n")
         break
-    else: 
+    else:
         print("Invalid answer! Please choose between A, B or C\n")
 
     # final score
