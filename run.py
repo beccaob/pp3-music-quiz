@@ -23,6 +23,10 @@ print("To begin, just enter your name and lets get rocking!")
 
 # 3 different options to choose from
 def game_menu():
+    """
+    game menu options
+    play, restart and quit
+    """
     print("Click 1-3 to choose from the options below:")
     print("1. Play \n2. Restart \n3. Quit \n")
 
@@ -46,7 +50,10 @@ while True:
 
 # player enters name
 def enter_player_name():
-
+    """
+    allows user to enter
+    their name
+    """
     while True:
         print("Next choose a username!\n")
         print("Letters A-Z, a-z, and numbers 0-9 are allowed.")
@@ -58,9 +65,8 @@ def enter_player_name():
         if check_name(player_name):
             print("\n")
             print(f"Hi {player_name}, lets get ready to rock! \n")
-            print("There are two types of questions in this quiz,")
-            print("Y/N and multiple choice. Enter Y for yes")
-            print("and N for no, or ‘A’ ‘B’ or ‘C’.")
+            print("This is a multiple choice quiz.")
+            print("Enter 'A', 'B' or 'C' to choose your answer.")
             print("Letters are not case-sensitive.\n")
             print("Go forth and smash it!\n")
             data = quiz.play_quiz()
@@ -71,22 +77,25 @@ def enter_player_name():
 
 
 def check_name(player_name):
-     """
-     checks if username meets standards
-     will raise ValueError if it doesnt
-     """
-     try: 
+    """
+    checks if username meets standards
+    will raise ValueError if its more
+    than 8 characters, no name entered
+    if special characters used
+    """
+    try:
         if not player_name:
-             raise ValueError("Please enter a username!")
+            raise ValueError("Please enter a username!")
         if len(player_name) > 8:
             raise ValueError("Oops! Username too long.")
         if not player_name.isalnum():
             raise ValueError("Only letters and numbers are allowed")
-        except ValueError as e:
-            print(f"Invalid data: {e}! Please try again.\n")
-            return False
+    except ValueError as e:
+        print(f"Invalid data: {e}! Please try again.\n")
+        return False
 
-        return True
+    return True
+
 
 def restart_game():
     """
@@ -95,6 +104,7 @@ def restart_game():
     while True:
         data = quiz.play_quiz()
         game_menu()
+
 
 def main():
     """
