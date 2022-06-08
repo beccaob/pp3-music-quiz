@@ -44,6 +44,7 @@ def game_menu():
             restart_game()
         elif menu_choice == "3":
             print("Okay, see you next time!")
+            quit()
         else:
             print("Invalid input! Please choose between 1 - 3")
 

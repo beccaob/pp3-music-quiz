@@ -8,7 +8,7 @@ def play_quiz():
 # Q1
     while True:
         print("Which symbol was the title of Ed Sheerans first album?")
-        ans1 = input("A. +\nB. =\nC. %\nj").strip()
+        ans1 = input("A. +\nB. =\nC. %\n").strip()
         if ans1.upper() == "A":
             print("Correct!\n")
             score += 1
@@ -112,7 +112,7 @@ def play_quiz():
 
 # Q8
     while True:
-        print("What was the name of the band formed by Jack Bruce, Eric Clapton, and Ginger Baker?")
+        print("What was the name of the band formed by Jack Bruce & Eric Clapton?")
         ans8 = input("A. Cream\nB. Doobie Brothers\nC. ACDC\n").strip()
         if ans8.upper() == "A":
             print("Correct!\n")
