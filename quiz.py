@@ -98,8 +98,8 @@ def play_quiz():
 
 # Q7
     while True:
-        print
-        ("Which prison did Johnny Cash famously sing about in his 1955 song?")
+        print(
+            "Which prison did Johnny Cash sing about in his 1955 song?")
         ans7 = input("A. Folsom\nB. Alcatraz\nC. Ohio State\n").strip()
         if ans7.upper() == "A":
             print("Correct!\n")
@@ -114,8 +114,8 @@ def play_quiz():
 
 # Q8
     while True:
-        print
-        ("What was the name of the band formed by Jack Bruce & Eric Clapton?")
+        print(
+            "What's the name of the band formed by Eric Clapton?")
         ans8 = input("A. Cream\nB. Doobie Brothers\nC. ACDC\n").strip()
         if ans8.upper() == "A":
             print("Correct!\n")
@@ -130,8 +130,8 @@ def play_quiz():
 
 # Q9
     while True:
-        print
-        ("Who originally recorded I Will Always Love You in 1973?")
+        print(
+            "Who originally recorded I Will Always Love You in 1973?")
         ans9 = input(
             "A. David Bowie\nB. Dolly Parton\nC. Whitney Houston\n").strip()
         if ans9.upper() == "B":
@@ -147,8 +147,8 @@ def play_quiz():
 
 # Q10
     while True:
-        print
-        ("Which band had a hit album'A Rush of Blood to the Head'?")
+        print(
+            "Which band had a hit album'A Rush of Blood to the Head'?")
         ans10 = input(
             "A.Bowling For Soup\nB.My Chemical Romance\nC.Coldplay\n").strip()
         if ans10.upper() == "C":
@@ -177,4 +177,4 @@ def play_quiz():
     else:
         print("Unreal, well done!\n")
         return score
-        
+      
