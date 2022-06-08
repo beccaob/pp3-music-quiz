@@ -20,10 +20,12 @@ print("Think you know all things music?\n")
 print("Test yourself with this 10 question quiz!\n")
 print("To begin, just enter your name and lets get rocking!")
 
+
 # 3 different options to choose from
 def game_menu():
     print("Click 1-3 to choose from the options below:")
     print("1. Play \n2. Restart \n3. Quit \n")
+
 
 # different outcomes for each option
 while True:
@@ -41,6 +43,7 @@ while True:
     else:
         print("Invalid input! Please choose between 1 - 3")
 
+
 # player enters name
 def enter_player_name():
 
@@ -49,7 +52,7 @@ def enter_player_name():
         print("Letters A-Z, a-z, and numbers 0-9 are allowed.")
         print("Maximum of 8 characters.")
         print("Any white space will be removed.\n")
-     
+
         player_name = input("Please enter your chosen username: \n")
 
         if check_name(player_name):
@@ -61,7 +64,23 @@ def enter_player_name():
             print("Letters are not case-sensitive.\n")
             print("Go forth and smash it!\n")
             data = quiz.play_quiz()
-            menu()
+            game_menu()
 
     check_name(player_name)
     return player_name.strip()
+
+
+def check_name(player_name):
+    # checks if username meets standards
+    # will raise ValueError if it doesnt
+    
+    try:
+        if not player_name:
+            raise ValueError("Please enter a username!")
+        if len(player_name) > 8:
+            raise ValueError("Oops! Username too long")
+        if not player_name.isalnum():
+            raise ValueError("Only letters and digits are permitted")
+    except ValurError as e:
+        print(f"Invalid data: {e}! Please try again.\n")
+        return False
