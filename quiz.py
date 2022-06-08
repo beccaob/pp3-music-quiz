@@ -142,7 +142,7 @@ def play_quiz():
 
 # Q10
     while True:
-        print("Which band had a huge international hit album in 2002 with the record "A Rush of Blood to the Head"?")
+        print("Which band had a huge international hit album in 2002 with the record 'A Rush of Blood to the Head'?")
         ans10 = input("A. Bowling For Soup\nB. My Chemical Romance\nC. Coldplay\n").strip()
         if ans10.upper() == "C":
             print("Correct!\n")
