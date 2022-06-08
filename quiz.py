@@ -1,7 +1,6 @@
-# questions and answers of quiz game held here 
+# questions and answers of quiz game held here
 
 def play_quiz():
-
     score = 0 
 # variable for score
 # each time player gets question correct
@@ -9,8 +8,8 @@ def play_quiz():
 
 # Q1
 while True:
-    print("Which mathematical symbol was the title of Ed Sheerans first album in 2011?")
-    ans1 = input("A. + \nB. = \nC. % /nAnswer: \n").strip()
+    print("Which symbol was the title of Ed Sheerans first album?")
+    ans1 = input("A. +\nB. =\nC. %/nAnswer:\n").strip()
     if ans1.upper() == "A":
         print("Correct!\n")
         score += 1
