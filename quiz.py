@@ -15,6 +15,7 @@ def play_quiz():
             break
         elif ans1.upper() == "B" or ans1.upper() == "C":
             print("Oops! That's incorrect.\n")
+            print("Correct Answer: A\n")
             break
         else:
             print("Invalid answer! Please choose between A, B or C\n")
@@ -29,6 +30,7 @@ def play_quiz():
             break
         elif ans2.upper() == "A" or ans2.upper() == "C":
             print("Oops! That's incorrect.\n")
+            print("Correct Answer: B\n")
             break
         else:
             print("Invalid answer! Please choose between A, B or C\n")
@@ -43,6 +45,7 @@ def play_quiz():
             break
         elif ans3.upper() == "B" or ans3.upper() == "C":
             print("Oops! That's incorrect.\n")
+            print("Correct Answer: A\n")
             break
         else:
             print("Invalid answer! Please choose between A, B or C\n")
@@ -57,6 +60,7 @@ def play_quiz():
             break
         elif ans4.upper() == "B" or ans4.upper() == "A":
             print("Oops! That's incorrect.\n")
+            print("Correct Answer: C\n")
             break
         else:
             print("Invalid answer! Please choose between A, B or C\n")
@@ -71,6 +75,7 @@ def play_quiz():
             break
         elif ans5.upper() == "C" or ans5.upper() == "A":
             print("Oops! That's incorrect.\n")
+            print("Correct Answer: B\n")
             break
         else:
             print("Invalid answer! Please choose between A, B or C\n")
@@ -85,6 +90,7 @@ def play_quiz():
             break
         elif ans6.upper() == "C" or ans6.upper() == "A":
             print("Oops! That's incorrect.\n")
+            print("Correct Answer: B\n")
             break
         else:
             print("Invalid answer! Please choose between A, B or C\n")
@@ -99,6 +105,7 @@ def play_quiz():
             break
         elif ans7.upper() == "C" or ans7.upper() == "B":
             print("Oops! That's incorrect.\n")
+            print("Correct Answer: A\n")
             break
         else:
             print("Invalid answer! Please choose between A, B or C\n")
@@ -113,6 +120,7 @@ def play_quiz():
             break
         elif ans8.upper() == "C" or ans8.upper() == "B":
             print("Oops! That's incorrect.\n")
+            print("Correct Answer: A\n")
             break
         else:
             print("Invalid answer! Please choose between A, B or C\n")
@@ -127,6 +135,7 @@ def play_quiz():
             break
         elif ans9.upper() == "C" or ans9.upper() == "A":
             print("Oops! That's incorrect.\n")
+            print("Correct Answer: B\n")
             break
         else:
             print("Invalid answer! Please choose between A, B or C\n")
@@ -141,6 +150,7 @@ def play_quiz():
             break
         elif ans10.upper() == "B" or ans10.upper() == "A":
             print("Oops! That's incorrect.\n")
+            print("Correct Answer: C\n")
             break
         else:
             print("Invalid answer! Please choose between A, B or C\n")
