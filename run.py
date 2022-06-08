@@ -18,7 +18,6 @@ SHEET = GSPREAD_CLIENT.open('music_quiz')
 print("Welcome to my Music Quiz!\n")
 print("Think you know all things music?\n")
 print("Test yourself with this 10 question quiz!\n")
-print("To begin, just enter your name and lets get rocking!")
 
 
 # 3 different options to choose from
