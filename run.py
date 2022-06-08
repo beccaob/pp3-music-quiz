@@ -71,16 +71,22 @@ def enter_player_name():
 
 
 def check_name(player_name):
-    # checks if username meets standards
-    # will raise ValueError if it doesnt
-    
-    try:
+     """
+     checks if username meets standards
+     will raise ValueError if it doesnt
+     """
+     try: 
         if not player_name:
-            raise ValueError("Please enter a username!")
+             raise ValueError("Please enter a username!")
         if len(player_name) > 8:
-            raise ValueError("Oops! Username too long")
+            raise ValueError("Oops! Username too long.")
         if not player_name.isalnum():
-            raise ValueError("Only letters and digits are permitted")
-    except ValurError as e:
-        print(f"Invalid data: {e}! Please try again.\n")
-        return False
+            raise ValueError("Only letters and numbers are allowed")
+
+def restart_game():
+    """
+    allow player to restart the game
+    """
+    while True:
+        data = quiz.play_quiz()
+        game_menu()
