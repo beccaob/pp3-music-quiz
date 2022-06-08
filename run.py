@@ -33,7 +33,7 @@ def game_menu():
 
 # different outcomes for each option
     while True:
-        menu_choice = input("Please choose an option below. \n").strip()
+        menu_choice = input("Please choose an option here. \n").strip()
         print("\n")
 
         if menu_choice == "1":
@@ -56,7 +56,7 @@ def enter_player_name():
     """
     while True:
         print("Next choose a username!\n")
-        print("Letters A-Z, a-z, and numbers 0-9 are allowed.")
+        print("Letters A-Z 01and numbers 0-9 are allowed.")
         print("Maximum of 8 characters.")
         print("Any white space will be removed.\n")
 
@@ -99,7 +99,7 @@ def check_name(player_name):
 
 def restart_game():
     """
-    allow player to restart the game
+    allows player to restart the game
     """
     while True:
         data = quiz.play_quiz()

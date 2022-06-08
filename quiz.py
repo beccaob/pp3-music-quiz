@@ -8,7 +8,7 @@ def play_quiz():
 # Q1
     while True:
         print("Which symbol was the title of Ed Sheerans first album?")
-        ans1 = input("A. +\nB. =\nC. %/nAnswer:\n").strip()
+        ans1 = input("A. +\nB. =\nC. % /n Answer:\n").strip()
         if ans1.upper() == "A":
             print("Correct!\n")
             score += 1
@@ -34,7 +34,7 @@ def play_quiz():
             print("Invalid answer! Please choose between A, B or C\n")
 
     # final score
-    print("You scored" + str(score) + "out of 10!\n")
+    print("You scored" + "" + str(score) + "" + "out of 10!\n")
 
     # statement for success
     # or condolances message
