@@ -8,7 +8,7 @@ def play_quiz():
 # Q1
     while True:
         print("Which symbol was the title of Ed Sheerans first album?")
-        ans1 = input("A. +\nB. =\nC. %").strip()
+        ans1 = input("A. +\nB. =\nC. %\n").strip()
         if ans1.upper() == "A":
             print("Correct!\n")
             score += 1
@@ -22,7 +22,7 @@ def play_quiz():
 # Q2
     while True:
         print("Which rock band was founded by Trent Reznor in 1988?")
-        ans2 = input("A. ACDC\nB. Nine Inch Nails\nC. Queen").strip()
+        ans2 = input("A. ACDC\nB. Nine Inch Nails\nC. Queen\n").strip()
         if ans2.upper() == "B":
             print("Correct!\n")
             score += 1
@@ -36,7 +36,7 @@ def play_quiz():
 # Q3
     while True:
         print("How many members are there in pop group Little Mix?")
-        ans3 = input("A. 3\nB. 4\nC. 2").strip()
+        ans3 = input("A. 3\nB. 4\nC. 2\n").strip()
         if ans3.upper() == "A":
             print("Correct!\n")
             score += 1
@@ -50,7 +50,7 @@ def play_quiz():
 # Q4
     while True:
         print("Which talent show judge managed Westlife?")
-        ans4 = input("A. Bressie\nB. Simon Cowell\nC. Louis Walsh").strip()
+        ans4 = input("A. Bressie\nB. Simon Cowell\nC. Louis Walsh\n").strip()
         if ans4.upper() == "C":
             print("Correct!\n")
             score += 1
@@ -64,7 +64,7 @@ def play_quiz():
 # Q5
     while True:
         print("Roger Taylor is the drummer in which band?")
-        ans5 = input("A. Guns N Roses\nB. Queen\nC. Led Zeppelin").strip()
+        ans5 = input("A. Guns N Roses\nB. Queen\nC. Led Zeppelin\n").strip()
         if ans5.upper() == "B":
             print("Correct!\n")
             score += 1
@@ -78,7 +78,7 @@ def play_quiz():
 # Q6
     while True:
         print("Which Bob Dylan song did Adele include on her first album?")
-        ans6 = input("A. Hurricane\nB. Make You Feel My Love\nC. Lay, Lady, Lay").strip()
+        ans6 = input("A. Hurricane\nB. Make You Feel My Love\nC. Lay, Lady, Lay\n").strip()
         if ans6.upper() == "B":
             print("Correct!\n")
             score += 1
