@@ -26,25 +26,26 @@ def game_menu():
     game menu options
     play, restart and quit
     """
+    print("\n")
     print("Click 1-3 to choose from the options below:")
     print("1. Play \n2. Restart \n3. Quit \n")
 
 
 # different outcomes for each option
-while True:
-    menu_choice = input("What would you like to do? \n").strip()
-    print("\n")
+    while True:
+        menu_choice = input("Please choose an option below. \n").strip()
+        print("\n")
 
-    if menu_choice == "1":
-        print("Class! Lets get rocking!\n")
-        break
-    elif menu_choice == "2":
-        print("Let's go again!")
-        # add restart game funct here
-    elif menu_choice == "3":
-        print("Okay, see you next time!")
-    else:
-        print("Invalid input! Please choose between 1 - 3")
+        if menu_choice == "1":
+            print("Class! Lets get rocking!\n")
+            break
+        elif menu_choice == "2":
+            print("Let's go again!")
+            restart_game()
+        elif menu_choice == "3":
+            print("Okay, see you next time!")
+        else:
+            print("Invalid input! Please choose between 1 - 3")
 
 
 # player enters name
@@ -89,8 +90,8 @@ def check_name(player_name):
             raise ValueError("Oops! Username too long.")
         if not player_name.isalnum():
             raise ValueError("Only letters and numbers are allowed")
-    except ValueError as e:
-        print(f"Invalid data: {e}! Please try again.\n")
+    except ValueError as error:
+        print(f"Invalid data: {error}! Please try again.\n")
         return False
 
     return True
